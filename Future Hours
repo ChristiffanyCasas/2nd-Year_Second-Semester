@@ -1,0 +1,55 @@
+print("This program will determine how many hours in the future you want to go. Choose between 1 and 12.\n")
+
+hr=eval(input("Select an hour: "))
+mer=input("Select between AM or PM: ")
+ahead=eval(input("How many hours ahead? "))
+future=hr+ahead
+
+if future==13 and mer=="AM":
+    print("New set hour: 1 PM")
+elif future==13 and mer=="PM":
+    print("New set hour: 1 AM")
+elif future==14 and mer=="AM":
+    print("New set hour: 2 PM")
+elif future==14 and mer=="PM":
+    print("New set hour: 2 AM")
+elif future==15 and mer=="AM":
+    print("New set hour: 3 PM")
+elif future==15 and mer=="PM":
+    print("New set hour: 3 AM")
+elif future==16 and mer=="AM":
+    print("New set hour: 4 PM")
+elif future==16 and mer=="PM":
+    print("New set hour: 4 AM")   
+elif future==17 and mer=="AM":
+    print("New set hour: 5 PM")
+elif future==17 and mer=="PM":
+    print("New set hour: 5 AM") 
+elif future==18 and mer=="AM":
+    print("New set hour: 6 PM")
+elif future==18 and mer=="PM":
+    print("New set hour: 6 AM")
+elif future==19 and mer=="AM":
+    print("New set hour: 7 PM")
+elif future==19 and mer=="PM":
+    print("New set hour: 7 AM")
+elif future==20 and mer=="AM":
+    print("New set hour: 8 PM")
+elif future==20 and mer=="PM":
+    print("New set hour: 8 AM")
+elif future==21 and mer=="AM":
+    print("New set hour: 9 PM")
+elif future==21 and mer=="PM":
+    print("New set hour: 9 AM")
+elif future==22 and mer=="AM":
+    print("New set hour: 10 PM")
+elif future==22 and mer=="PM":
+    print("New set hour: 10 AM")
+elif future==23 and mer=="AM":
+    print("New set hour: 11 PM")
+elif future==23 and mer=="PM":
+    print("New set hour: 11 AM")
+elif future==24 and mer=="AM":
+    print("New set hour: 12 PM")
+elif future==24 and mer=="PM":
+    print("New set hour: 12 AM")
