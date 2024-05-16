@@ -1,0 +1,46 @@
+from random import choice
+
+print("You have 5 tries to play")
+tries=5
+score=0
+
+for i in range(5):
+    game = ["ROCK", "PAPER", "SCISSORS"]
+    computer_player=choice(game)
+
+    player_input= input("Type your choice between ROCK, PAPER, or SCISSORS (use capital letters only): ")
+
+    print("Computer Answer: ", computer_player)
+
+    if player_input=="PAPER" and computer_player=="ROCK":
+        print("You won!")
+        score+=1
+    elif player_input=="SCISSORS" and computer_player=="PAPER":
+        print("You won!")
+        score+=1
+    elif player_input=="ROCK" and computer_player=="SCISSORS":
+        print("You won!")
+        score+=1
+        
+    elif player_input=="ROCK" and computer_player=="PAPER":
+        print("Computer won, you lose!")
+    elif player_input=="PAPER" and computer_player=="SCISSORS":
+        print("Computer won, you lose!")
+    elif player_input=="SCISSORS" and computer_player=="ROCK":
+        print("Computer won, you lose!")
+    
+    elif player_input=="ROCK" and computer_player=="ROCK":
+        print("It's a tie!")
+    elif player_input=="PAPER" and computer_player=="PAPER":
+        print("It's a tie!")
+    elif player_input=="SCISSORS" and computer_player=="SCISSORS":
+        print("It's a tie!")
+    
+    tries-=1
+    print(tries, "left.\n")
+
+print(score, "out of 5!")
+if score>2:
+    print("Congratulations, you won against the computer!")
+elif score<3:
+    print("Game Over, you lose!")
