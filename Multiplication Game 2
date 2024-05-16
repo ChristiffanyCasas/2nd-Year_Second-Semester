@@ -1,0 +1,18 @@
+from random import randint
+print("This program is a Multiplication Game for kids! Answer 10 random generated multiplication questions.\n")
+
+score=0
+
+for i in range(10):
+    numa=randint(1,10)
+    numb=randint(1,10)
+    q=numa*numb
+    print("Question", i+1, ": ", numa, "x", numb, "=", end="")
+    ans=eval(input("Answer: "))
+    if ans==q:
+        print("Right!\n")
+        score+=1
+    else:
+        print("Wrong! The answer is", q, ".\n")
+        
+print("Your total score is", score, "out of 10", ".")
