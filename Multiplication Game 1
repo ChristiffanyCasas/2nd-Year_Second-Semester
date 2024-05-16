@@ -1,0 +1,133 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat March 18 2023
+
+@author: ChristiffanyBCasas
+"""
+
+from random import randint
+print("This program is a Multiplication Game for kids! Answer 10 random generated multiplication questions.\n")
+
+num1a=randint(1,10)
+num1b=randint(1,10)
+q1=num1a*num1b
+print("Question 1: ", num1a, "x", num1b, "=", end="")
+ans1=eval(input("Answer: "))
+if ans1==q1:
+    print("Right!\n")
+    sc1=1
+else:
+    print("Wrong! The answer is", q1, ".\n")
+    sc1=0
+
+num2a=randint(1,10)
+num2b=randint(1,10)
+q2=num2a*num2b
+print("Question 2: ", num2a, "x", num2b, "=", end="")
+ans2=eval(input("Answer: "))
+if ans2==q2:
+    print("Right!\n")
+    sc2=1
+else:
+    print("Wrong! The answer is", q2, ".\n")
+    sc2=0
+
+num3a=randint(1,10)
+num3b=randint(1,10)
+q3=num3a*num3b
+print("Question 3: ", num3a, "x", num3b, "=", end="")
+ans3=eval(input("Answer: "))
+if ans3==q3:
+    print("Right!\n")
+    sc3=1
+else:
+    print("Wrong! The answer is", q3, ".\n")
+    sc3=0
+    
+num4a=randint(1,10)
+num4b=randint(1,10)
+q4=num4a*num4b
+print("Question 4: ", num4a, "x", num4b, "=", end="")
+ans4=eval(input("Answer: "))
+if ans4==q4:
+    print("Right!\n")
+    sc4=1
+else:
+    print("Wrong! The answer is", q4, ".\n")
+    sc4=0
+    
+num5a=randint(1,10)
+num5b=randint(1,10)
+q5=num5a*num5b
+print("Question 5: ", num5a, "x", num5b, "=", end="")
+ans5=eval(input("Answer: "))
+if ans5==q5:
+    print("Right!\n")
+    sc5=1
+else:
+    print("Wrong! The answer is", q5, ".\n")
+    sc5=0
+    
+num6a=randint(1,10)
+num6b=randint(1,10)
+q6=num6a*num6b
+print("Question 6: ", num6a, "x", num6b, "=", end="")
+ans6=eval(input("Answer: "))
+if ans6==q6:
+    print("Right!\n")
+    sc6=1
+else:
+    print("Wrong! The answer is", q6, ".\n")
+    sc6=0
+
+num7a=randint(1,10)
+num7b=randint(1,10)
+q7=num7a*num7b
+print("Question 7: ", num7a, "x", num7b, "=", end="")
+ans7=eval(input("Answer: "))
+if ans7==q7:
+    print("Right!\n")
+    sc7=1
+else:
+    print("Wrong! The answer is", q7, ".\n")
+    sc7=0
+
+num8a=randint(1,10)
+num8b=randint(1,10)
+q8=num8a*num8b
+print("Question 8: ", num8a, "x", num8b, "=", end="")
+ans8=eval(input("Answer: "))
+if ans8==q8:
+    print("Right!\n")
+    sc8=1
+else:
+    print("Wrong! The answer is", q8, ".\n")
+    sc8=0
+
+num9a=randint(1,10)
+num9b=randint(1,10)
+q9=num9a*num9b
+print("Question 9: ", num9a, "x", num9b, "=", end="")
+ans9=eval(input("Answer: "))
+if ans9==q9:
+    print("Right!\n")
+    sc9=1
+else:
+    print("Wrong! The answer is", q9, ".\n")
+    sc9=0
+
+num10a=randint(1,10)
+num10b=randint(1,10)
+q10=num10a*num10b
+print("Question 10: ", num10a, "x", num10b, "=", end="")
+ans10=eval(input("Answer: "))
+if ans10==q10:
+    print("Right!\n")
+    sc10=1
+else:
+    print("Wrong! The answer is", q10, ".\n")
+    sc10=0
+
+
+score=sc1+sc2+sc3+sc4+sc5+sc6+sc7+sc8+sc9+sc10
+print("Your total score is", score, "out of 10", ".")
